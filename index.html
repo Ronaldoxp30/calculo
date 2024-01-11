@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        body{
+          background-image: url(img/WhatsApp\ Image\ 2024-01-10\ at\ 23.56.42.jpeg);
+        }
+        h1{
+            color: rgb(145, 255, 0);
+        }
+        h2{
+            color: rgb(229, 255, 0);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <h1>Olá, como você estar?</h1>
+        <h2>esta é a sua calculadora de gastos:</h2>
+        <button onclick="navigateToCalculadora()">Ir para a Calculadora</button>
+    </div>
+    <script>
+        function navigateToCalculadora() {
+            window.location.href = 'calculadora.html';
+        }
+    </script>
+</body>
+</html>
